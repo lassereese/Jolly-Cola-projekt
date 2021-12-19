@@ -1,0 +1,1467 @@
+/**
+ * fil: css/style.css
+ **/
+
+/* Reset: Meyer Style */
+/* fjerner default browser styles */
+@import 'reset.css';
+
+
+/* Farve- og fontvariabler */
+:root {
+  /* fonte */
+  --overskrift: 'Helvetica';
+  --broedtekst: Helvetica, sans-serif;
+  --tekst: 'Helvetica', sans-serif;
+
+}
+
+/* Typografisk */
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+  font-size: 8vw;
+  text-align: center;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+/* header */
+header {
+  background-image: url("../images/baggrund.png");
+}
+
+header img {
+  width: 25%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav{
+  font-size: 80px;
+  font-weight: 900;
+  position: fixed;
+
+}
+
+.menu-baggrund {
+background-image: url("../images/baggrund.png");
+}
+
+nav img {
+width: 45%;
+margin-left: 1%;
+}
+
+#menu {
+margin-top: 10%;
+}
+
+
+main {
+}
+
+/* Sections (højde == skærmhøjde) */
+section {
+  background-image: url("../images/baggrund.png");
+}
+
+/* Billeder */
+
+/* MOBILE FIRST
+
+/* 1. Mobile enheder (begynd her) */
+@media only screen and (max-width: 400px) {
+
+  /* Menu */
+
+  /* vis burger */
+  #showMenu {
+    display: block;
+    margin-top: -130px;
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 9vw;
+    max-width: 40ch; /* undgå lange ulæselige linjer */
+    font-family: sans-serif
+  }
+
+.dropdown {
+display: none;
+}
+
+#aaa {
+  display: inline;
+  float: left;
+  width: 49%;
+}
+
+#bbb {
+  display: inline;
+  float: right;
+  width: 49%;
+}
+
+#ccc {
+  width: 98%;
+  padding-top: 20px;
+  margin-bottom: 8%;
+}
+
+
+/** Forside slutter **/
+
+/** Udvlag **/
+
+.jule-colaen {
+  width: 89%;
+  display: inline;
+  float: left;
+    margin-left: 3%;
+}
+
+.glasflaske {
+  width: 90%;
+  display: inline;
+  float: left;
+  margin-left: 3%;
+}
+
+.sortiment1 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 2%;
+background-color: white;
+}
+
+.sortiment2 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 2%;
+background-color: white;
+padding-bottom: 5%;
+}
+
+.cola {
+width: 47%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.sukkerfri {
+width: 47%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.appelsin {
+width: 47%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.time {
+width: 47%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+
+.boxen {
+display: none;
+}
+
+/* Udvalg slutter */
+
+/* Mobile menu */
+.mob-menu-logo {
+margin-top: 5%;
+width: 40%;
+margin-left: 30%;
+}
+
+.mob-menu1 {
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* Mobile menu slutter */
+
+/* Jolly Cola siden */
+
+.cola-ikon{
+  width: 50%;
+margin-left: 25%;
+margin-bottom: 10%;
+}
+
+.cola-tekst p {
+  display: block;
+  text-align: center;
+    font-size: 6vw;
+    max-width: 40ch; /* undgå lange ulæselige linjer */
+    font-family: sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .cola-tekst {
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  }
+
+.cola-inforgraphic {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+}
+
+.stoerrelserogflasker-desk{
+  display: none;
+}
+
+.stoerrelse-tekst {
+  display: none;
+}
+
+/* Jolly Cola siden slutter*/
+
+/* Forhandlere */
+
+.naeste {
+}
+.fakta {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.netto {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.aldi{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.beveco{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/* Forhandlere slutter */
+
+/* Kampagner */
+
+.julekampange-desk-tab{
+display: none;
+}
+
+.julekampange-mob {
+width: 90%;
+margin-left: 5%;
+margin-bottom: 10%;
+margin-top: 10%;
+}
+
+.vind-t-shirt {
+  margin-top: 10%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.vind-et-års-forbrug {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* Kampanger slutter */
+
+/* Jule Kampange slutter */
+
+.jule-cola {
+  display: inline;
+  float: left;
+  width: 40%;
+  margin-top: 5%;
+  margin-left: 6%;
+  margin-bottom: 10%
+}
+
+.jule-cola-tekst p {
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    max-width: 40ch; /* undgå lange ulæselige linjer */
+      font-family: sans-serif;
+      margin-top: 5%;
+      margin-bottom: 10%;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+.kampange-tekstbox2 {
+  display: none;
+}
+    .jule-cola-tekst {
+    display: inline;
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    padding-top: 25%;
+    margin-top: 5%;
+    padding-bottom: 30%;
+    background-image: url("../images/footer-baggrund.png");
+    }
+
+    .kampange-tekstbox p {
+      display: block;
+      text-align: center;
+        font-size: 6vw;
+        max-width: 40ch; /* undgå lange ulæselige linjer */
+        font-weight: bolder;
+        font-family: sans-serif;
+        margin-top: 20%;
+        margin-bottom: 15%;
+        margin-right: 2%;
+        margin-left: 2%;
+      }
+
+      .kampange-tekstbox{
+      border-style: solid;
+      border-width: medium;
+      border-color: red;
+      margin-right: 2%;
+      margin-left: 2%;
+      margin-bottom: 5%;
+      margin-top: 10%;
+      }
+
+
+    .bringbackgreensanta {
+    width: 90%;
+    margin-left: 5%;
+    }
+
+    .jule-t-shirt {
+      margin-top: 10%;
+    }
+
+    .bringbackgreensanta-2 {
+      display: none;
+    }
+
+/* Jule Kampange slutter */
+
+/** Historien om **/
+
+.cola-historie {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.historien-om {
+  margin-bottom: 20%;
+}
+
+.historien-om-desk {
+  display: none;
+}
+
+.artikel {
+  margin-bottom: 10%;
+}
+
+/** Historien om slutter **/
+
+
+/* Footer */
+.footer {
+margin-left: 8%;
+margin-bottom: 30%
+}
+
+.footer-img-face {
+margin-right: 20px;
+width: 25%;
+display: inline;
+float: left;
+
+}
+.footer-img-insta {
+margin-right: 20px;
+width: 25%;
+display: inline;
+float: left;
+}
+.footer-img-twit {
+margin-right: 20px;
+width: 25%;
+display: inline;
+float: left;
+}
+
+.box p {
+display:block;
+margin-left: 12%;
+}
+.box2 {
+  margin-top: 15%;
+width: 99%;
+}
+
+footer {
+  background-image: url("../images/footer-baggrund.png");
+  padding-top: 30px;
+}
+
+}
+
+/* 2. Tablets mv. (fortsæt her) */
+
+/* iPad width > 401px */
+
+
+@media only screen and (min-width: 401px) {
+
+  #wrap {
+    max-width: 1024px; /* Holder designet til max 1024px */
+  }
+
+  img {
+    width: 100%;
+  }
+
+  nav img {
+  width: 32%;
+  display: inline;
+  float: left;
+  }
+
+p {
+  font-size: 2vw;
+  max-width: 40ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif
+}
+
+h2 {
+  font-size: 4vw;
+}
+  /* Menu */
+  /* vis burger */
+  #showMenu {
+    display: block;
+    margin-top: -130px;
+    margin-bottom: 50px;
+  }
+
+.dropdown {
+display: none;
+}
+
+  /* fuld bredde til øverste section: ; */
+  #aaa {
+    display: inline;
+    float: left;
+    width: 33%;
+        margin-bottom: 20px;
+  }
+
+  #bbb {
+    display: inline;
+    float: left;
+    width: 33%;
+        margin-bottom: 20px;
+  }
+
+  #ccc {
+    display: inline;
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+  }
+
+#boxensbox {
+width: 95%;
+display: inline-block;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+
+.boxen {
+padding-top: 40px;
+padding-bottom: 120px;
+margin-bottom: 10px;
+border: solid;
+border-color: red;
+}
+
+.original {
+width: 25%;
+display: inline;
+float: left;
+margin-left: 70px;
+}
+
+.tekst-box {
+  margin-left: 20px;
+  display: inline;
+  float: left;
+  max-width: 38ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif;
+  font-weight: 580;
+  margin-left: 18%;
+}
+
+.folg {
+  display: inline;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+/** Forside slutter **/
+
+/** Udvlag **/
+
+.nyt-spændende {
+  width: 38%;
+  float: left;
+  display: inline;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.jule-colaen {
+  width: 38%;
+  display: inline;
+  float: left;
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.glasflaske {
+  width: 38%;
+  display: inline;
+  float: left;
+  margin-left: 3%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.sortiment1 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 27%;
+margin-top: 2%;
+}
+
+.sortiment2 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 27%;
+margin-top: 2%;
+}
+
+.cola {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.sukkerfri {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+
+}
+.appelsin {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+
+.time {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+margin-bottom: 5%;
+}
+
+/* Udvalg slutter */
+
+/* Tablet Menuside starter */
+.mob-menu-logo {
+width: 10%;
+margin-left: 43%;
+margin-top: 3%;
+position: sticky;
+}
+
+#menu {
+  margin-top: -0.5%;
+}
+
+/* Menuside slutter */
+
+/* Jolly Cola siden */
+
+.cola-ikon{
+  display: inline;
+  float: left;
+width: 30%;
+margin-left: 10%;
+margin-bottom: 5%;
+}
+
+.cola-tekst p {
+  display: block;
+  text-align: center;
+    font-size: 2vw;
+    max-width: 40ch; /* undgå lange ulæselige linjer */
+    font-family: sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .cola-tekst {
+  display: inline;
+  float: left;
+  width: 40%;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 12%;
+  }
+
+.cola-inforgraphic {
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+}
+
+.stoerrelserogflasker-desk{
+  display: none;
+}
+
+.stoerrelse-tekst {
+  display: none;
+}
+
+/* Jolly Cola siden slutter*/
+
+/* Forhandlere */
+
+.naeste {
+}
+.fakta {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.netto {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.aldi{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.beveco{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/* Forhandlere slutter */
+
+/* Kampagner */
+
+.julekampange-mob {
+display: none;
+}
+
+.julekampange-desk-tab{
+margin-top: 3%;
+margin-bottom: 5%;
+}
+
+
+.vind-t-shirt {
+  display: inline;
+  float: left;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.vind-et-års-forbrug {
+  display: inline;
+  float: left;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+/* Kampanger slutter */
+
+/* Jule kampange */
+
+.julemanden-kampange {
+  display: inline;
+  float: left;
+  width: 55%;
+  margin-left: 5%;
+  margin-top: -60%;
+}
+
+.kampange-tekstbox {
+  display: none;
+}
+
+.jule-cola {
+  display: inline;
+  float: left;
+  width: 25%;
+  margin-top: -55%;
+  margin-left: 68%;
+}
+
+.jule-cola-tekst {
+display: none;
+}
+
+.kampange-tekstbox2 {
+display: block;
+text-align: center;
+border-style: solid;
+border-width: medium;
+border-color: black;
+margin-left: 5%;
+margin-right: 5.7%;
+margin-top: 5%;
+
+}
+
+.kampange-tekstbox2 {
+display: block;
+text-align: center;
+margin-top: 60%;
+padding-left: 25%;
+padding-bottom: 5%;
+}
+
+.kampange-tekstbox2 p {
+  margin-top: 5%;
+
+}
+
+
+.bringbackgreensanta {
+  display: none;
+}
+
+.jule-t-shirt{
+display: inline;
+float: left;
+width: 33%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+  .bringbackgreensanta-2 {
+    margin-left: 3%;
+    width: 53%;
+    display: inline;
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+  }
+
+  /* Jule kampange slutter */
+  /** Historien om **/
+
+  .cola-historie {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .historien-om {
+    margin-bottom: 20%;
+  }
+
+  .historien-om-desk {
+  display: none;
+  }
+
+  .artikel {
+    margin-bottom: 10%;
+  }
+
+  /** Historien om slutter **/
+
+/* Footer */
+
+.footer {
+margin-bottom: 40%
+}
+
+.footer-img-face {
+margin-left: 2%;
+margin-right: 20px;
+width: 5%;
+display: inline;
+float: left;
+
+}
+.footer-img-insta {
+margin-right: 20px;
+width: 5%;
+display: inline;
+float: left;
+}
+
+.footer-img-twit {
+width: 5%;
+display: inline;
+float: left;
+}
+
+.box {
+  display: block;
+  text-align: center;
+  font-size: 9vw;
+  max-width: 40ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif;
+  margin-top: -40%;
+  position: absolute;
+  margin-left: 35%;
+}
+
+.box2 {
+margin-left: 75%;
+margin-top: -40%;
+padding-bottom: 50px;
+width: 20%;
+}
+
+footer {
+  display: inline;
+  float: left;
+  background-image: url("../images/desk-footer.baggrund.png");
+  width: 100%;
+  padding-top: 5%;
+}
+
+
+}
+
+/* 3. Stor skærm (slut her) */
+@media only screen and (min-width: 1025px) {
+
+  /* Vises centreret i vinduet */
+  #wrap {
+    max-width: 1925px;
+    margin:auto;
+  }
+  #showMenu {
+    display: none;
+  }
+nav img {
+width: 30%;
+display: inline;
+float: left;
+}
+
+p {
+  font-size: 1.8vw;
+  max-width: 40ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+  .dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    font-size: 80px;
+    border: none;
+    display: inline;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline;
+    top: -280px
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 1024px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-color: orange;
+  }
+
+  .dropdown-content a {
+    color: black;
+    width: 100%;
+  }
+
+  .dropdown-content a:hover {
+    background-color: red;
+    width: 10%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    width: 10%;
+    display: inline-block;
+    float: left;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: orange;
+  }
+
+.row1 {
+  display: inline;
+  float: left;
+  width: 80%;
+}
+.row2 {
+  display: inline;
+  float: left;
+  width: 40%;
+}
+  .imghover {
+    position: relative;
+    width: 10%;
+  }
+
+
+  /* fuld bredde til øverste section: ; */
+  #aaa {
+    display: inline;
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+    margin-top: 3%;
+  }
+
+  #bbb {
+    display: inline;
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+    margin-top: 3%;
+
+  }
+
+  #ccc {
+    display: inline;
+    float: left;
+    width: 33%;
+    margin-bottom: 4%;
+    margin-top: 3%;
+
+  }
+
+#boxensbox {
+width: 95%;
+display: inline-block;
+margin-right: 20px;
+margin-left: 20px;
+margin-bottom: 4%;
+}
+
+
+.boxen {
+padding-top: 50px;
+padding-bottom: 190px;
+margin-bottom: 10px;
+border: solid;
+border-color: red;
+}
+
+.original {
+width: 25%;
+display: inline;
+float: left;
+margin-left: 70px;
+}
+
+.tekst-box {
+  display: inline;
+  float: left;
+  font-size: 26px;
+  max-width: 38ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif;
+  font-weight: 580;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+
+.folg {
+  display: inline;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+.ig-fb{
+  padding-top: 30px;
+  padding-bottom: 550px;
+  margin-left: 10%;
+  margin-right: 5%;
+
+
+}
+
+.facebook {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 45%;
+  display: inline;
+  float: left;
+}
+
+.instagram {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 42%;
+  display: inline;
+  float: left;
+}
+
+/** Forside slutter **/
+
+/** Udvlag **/
+
+.nyt-spændende {
+  width: 38%;
+  float: left;
+  display: inline;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.jule-colaen {
+  width: 38%;
+  display: inline;
+  float: left;
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.glasflaske {
+  width: 38%;
+  display: inline;
+  float: left;
+  margin-left: 3%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.sortiment1 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 27%;
+margin-top: 2%;
+}
+
+.sortiment2 {
+width: 100%;
+float: left;
+display: inline;
+margin-left: 27%;
+margin-top: 2%;
+}
+
+.cola {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.sukkerfri {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+.appelsin {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+}
+
+.time {
+width: 20%;
+display: inline;
+float: left;
+margin-left: 2%;
+margin-bottom: 5%;
+}
+
+
+/* Menuside slutter */
+
+/* Jolly Cola siden */
+
+.cola-ikon{
+display: inline;
+float: left;
+width: 30%;
+margin-left: 10%;
+margin-bottom: 5%;
+}
+
+.cola-tekst p {
+  display: block;
+  text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    max-width: 40ch; /* undgå lange ulæselige linjer */
+    font-family: sans-serif;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .cola-tekst {
+  display: inline;
+  float: left;
+  width: 40%;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 12%;
+  }
+
+.cola-inforgraphic {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.stoerrelserogflasker {
+  display: none;
+}
+
+.stoerrelse-tekst {
+  display: inline;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+  padding: 2%;
+}
+
+.stoerrelserogflasker-desk {
+  display: inline;
+  float: left;
+  width: 60%;
+}
+
+/* Jolly Cola siden slutter*/
+
+/* Forhandlere */
+
+.naeste {
+}
+.fakta {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.netto {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.aldi{
+  display: inline;
+  float: left;
+  width: 51%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.beveco{
+  display: inline;
+  float: left;
+  width: 28.5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+
+/* Forhandlere slutter */
+
+/* Kampagner */
+
+.julekampange-mob {
+display: none;
+}
+
+.julekampange-desk-tab{
+margin-top: 3%;
+margin-bottom: 5%;
+width: 90%;
+margin-left: 5%
+}
+
+
+.vind-t-shirt {
+  display: inline;
+  float: left;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.vind-et-års-forbrug {
+  display: inline;
+  float: left;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+/* Kampanger slutter */
+
+/* Jule kampange */
+
+.julemanden-kampange {
+  display: inline;
+  float: left;
+  width: 55%;
+  margin-left: 5%;
+  margin-top: -60%;
+}
+
+.kampange-tekstbox {
+  display: none;
+}
+
+.jule-cola {
+  display: inline;
+  float: left;
+  width: 25%;
+  margin-top: -55%;
+  margin-left: 68%;
+}
+
+.jule-cola-tekst {
+display: none;
+}
+
+.kampange-tekstbox2 {
+display: block;
+text-align: center;
+border-style: solid;
+border-width: medium;
+border-color: black;
+margin-left: 5%;
+margin-right: 5.7%;
+margin-top: 5%;
+
+}
+
+.kampange-tekstbox2 {
+display: block;
+text-align: center;
+margin-top: 60%;
+padding-left: 25%;
+padding-bottom: 5%;
+}
+
+.kampange-tekstbox2 p {
+  margin-top: 5%;
+
+}
+
+
+.bringbackgreensanta {
+  display: none;
+}
+
+.jule-t-shirt{
+display: inline;
+float: left;
+width: 33%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+  .bringbackgreensanta-2 {
+    margin-left: 3%;
+    width: 53%;
+    display: inline;
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  /* Jule kampange slutter */
+  /* Historien om */
+
+  .cola-historie {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .historien-om {
+    display: none;
+  }
+
+  .historien-om-desk {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .artikel {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  /* Historien om slutter */
+
+/* Footer */
+
+.footer {
+margin-bottom: 40%
+}
+
+.footer-img-face {
+margin-left: 3%;
+margin-right: 20px;
+width: 5%;
+display: inline;
+float: left;
+
+}
+.footer-img-insta {
+margin-right: 20px;
+width: 5%;
+display: inline;
+float: left;
+}
+
+.footer-img-twit {
+width: 5%;
+display: inline;
+float: left;
+}
+
+.box {
+  display: block;
+  text-align: center;
+  font-size: 2.0em;
+  max-width: 40ch; /* undgå lange ulæselige linjer */
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 33%;
+}
+
+.box2 {
+margin-left: 70%;
+margin-top: -40%;
+padding-bottom: 50px;
+width: 20%;
+}
+
+footer {
+  display: inline;
+  float: left;
+  background-image: url("../images/desk-footer.baggrund.png");
+  width: 100%;
+  padding-top: 5%;
+}
+
+}
